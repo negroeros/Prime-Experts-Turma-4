@@ -9,4 +9,4 @@ Criar Email
 ***Test Cases***
 Cenario: teste de criacao de email
     ${test}  Criar Email  erothildes  filipe    augusto
-    Log To Console  \n\n Imprimindo email: \n ${test
+    Log To Console  \n\n Imprimindo email: \n ${test}
