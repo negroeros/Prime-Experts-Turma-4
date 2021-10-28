@@ -1,10 +1,17 @@
+***Settings***
+Library  SeleniumLibrary
+
+*** Variables ***
+${URL}
+
 ***Keywords***
 Criar Email
     [Arguments]  ${nome}  ${sobrenome}  ${idade}
     ${email}  Catenate  ${nome}_${sobrenome}_${idade}@robot.com
     #nome_sobrenome_idade@robot.com
  
-    [Return]  ${email}
+   [Return]  ${email}
+   # [Return]  ${URL}
  
 ***Test Cases***
 Cenario: teste de criacao de email
