@@ -1,0 +1,31 @@
+{
+    "configurations": [
+    {
+        "args": [
+            "--extensionDevelopmentPath=${workspaceFolder}"
+        ],
+        "name": "Launch Extension",
+        "outFiles": [
+            "${workspaceFolder}/out/**/*.js"
+        ],
+        "preLaunchTask": "npm",
+        "request": "launch",
+        "type": "pwa-extensionHost"
+    },
+    {
+        "type": "robotframework-lsp",
+        "name": "Robot Framework: Launch .robot file",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "target": "${file}",
+        "terminal": "none",
+        "env": {},
+        "args": []
+    },
+    {
+        "type": "robotframework-lsp",
+        "name": "Robot Framework: Launch template",
+        "request": "launch"
+    },
+    ]
+}
