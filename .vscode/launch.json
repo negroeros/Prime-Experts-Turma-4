@@ -1,18 +1,33 @@
-//launch.json
-{
+{ //launch.json
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "type": "robotframework-lsp",
+        "name": "Robot Framework: Launch .robot file",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "target": "${file}",
+        "terminal": "none",
+        "env": {},
+        "args": []
+    }
+    ],
+    "compounds": [],
     "type": "robot",
     "request": "launch",
     "name": "Robotframework Debugger",
     "program": "${workspaceFolder}/${relativeFile}",
     "stopOnEntry": true,
     "arguments": "",
-    "libraries": [
-        "${workspaceFolder}\\Libraries"
+    "libraries": 
+    [
+    "${workspaceFolder}\\Libraries"
     ],
-    "variables": [
-        {
-            "Name": "RobotVariable",
-            "Value": "data"
-        }
-
+    "variables": 
+        [
+            {
+                "Name": "RobotVariable",
+                "Value": "data"
+            },
+        ],
 }
