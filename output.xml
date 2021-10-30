@@ -1,24 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211028 10:21:55.731" rpa="false" schemaversion="2">
-<suite id="s1" name="Robot Interactive Console" source="c:\Users\t01484\.vscode\extensions\robocorp.robotframework-lsp-0.25.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
-<test id="s1-t1" name="Default Task/Test">
-<kw name="Interpreter Main Loop" library="MainLoop">
-<status status="PASS" starttime="20211028 10:21:55.754" endtime="20211028 10:22:46.723"/>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211029 22:43:11.944" rpa="false" schemaversion="2">
+<suite id="s1" name="Exemplo 01" source="c:\Users\t01484\Desktop\t01484\CURSOS\Prime Experts - Turma 4\Prime-Experts-Turma-4\MY SANDBOX\Exemplo_01.robot">
+<test id="s1-t1" name="Valid Login">
+<kw name="Open Login Page">
+<msg timestamp="20211029 22:43:12.068" level="FAIL">No keyword with name 'Open Login Page' found.</msg>
+<status status="FAIL" starttime="20211029 22:43:12.067" endtime="20211029 22:43:12.068"/>
 </kw>
-<status status="PASS" starttime="20211028 10:21:55.754" endtime="20211028 10:22:46.723"/>
+<kw name="Input Credentials">
+<arg>demo</arg>
+<arg>mode</arg>
+<status status="NOT RUN" starttime="20211029 22:43:12.080" endtime="20211029 22:43:12.080"/>
+</kw>
+<kw name="Submit Credentials">
+<status status="NOT RUN" starttime="20211029 22:43:12.089" endtime="20211029 22:43:12.089"/>
+</kw>
+<kw name="Welcome Page Should Be Open">
+<status status="NOT RUN" starttime="20211029 22:43:12.098" endtime="20211029 22:43:12.098"/>
+</kw>
+<status status="FAIL" starttime="20211029 22:43:12.054" endtime="20211029 22:43:12.099">No keyword with name 'Open Login Page' found.</status>
 </test>
-<status status="PASS" starttime="20211028 10:21:55.732" endtime="20211028 10:22:46.725"/>
+<doc>A test suite for valid login.
+
+Keywords are imported from the resource file</doc>
+<status status="FAIL" starttime="20211029 22:43:11.954" endtime="20211029 22:43:12.102"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Exemplo 01">Exemplo 01</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20211029 22:43:12.050" level="ERROR">Error in file 'c:\Users\t01484\Desktop\t01484\CURSOS\Prime Experts - Turma 4\Prime-Experts-Turma-4\MY SANDBOX\Resources_Exemplo_01.robot' on line 2: Importing library 'Selenium' failed: ModuleNotFoundError: No module named 'Selenium'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\t01484\.vscode\extensions\robocorp.robotframework-lsp-0.25.0\src\robotframework_debug_adapter
+  C:\Users\t01484\Desktop\t01484\CURSOS\Prime Experts - Turma 4\Prime-Experts-Turma-4
+  c:\Users\t01484\.vscode\extensions\robocorp.robotframework-lsp-0.25.0\src
+  c:\Users\t01484\.vscode\extensions\robocorp.robotframework-lsp-0.25.0\src\robotframework_ls\vendored
+  C:\Python310\python310.zip
+  C:\Python310\DLLs
+  C:\Python310\lib
+  C:\Python310
+  C:\Users\t01484\AppData\Roaming\Python\Python310\site-packages
+  C:\Python310\lib\site-packages</msg>
 </errors>
 </robot>
