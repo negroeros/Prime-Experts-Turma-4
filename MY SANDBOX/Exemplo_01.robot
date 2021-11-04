@@ -1,13 +1,13 @@
 *** Settings ***
-Documentation     A test suite for valid login.
-...
-...               Keywords are imported from the resource file
-Resource          Resources_Exemplo_01.robot
+Library    SeleniumLibrary
+#Resource          .\Resources.robot
+*** Variables ***
+${Browser} 
+
+*** Keywords ***
+Open Browser Chrome    ${Browser}
+        Open Browser 
 
 *** Test Cases ***
-Valid Login
-    Open Login Page
-    Input Credentials    demo    mode
-    Submit Credentials
-    Welcome Page Should Be Open
-#    [Teardown]    Close Browser
+Abrir Navegador Chrome
+        Open Browser

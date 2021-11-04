@@ -1,9 +1,13 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource          .\Resources.robot
+#Resource          .\Resources.robot
 
 *** Variables ***
+${Browser}    Chrome
 
 *** Keywords ***
-        Open Browser
+        Open Browser      ${Browser}
+
 *** Test Cases ***
+Abrir Navegador
+        Open Browser
